@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamic clock</title>
+    <style>
+        body{
+            background: rgba(211, 23, 23, 0.822);
+            color: rgb(245, 245, 245);
+            font-family:cursive;
+            text-align: center;
+            margin-top: 150px;
+            font-weight: 700;
+        }
+        button{
+            border: 2px solid rgb(57, 96, 223);
+            border-radius: 20px;
+            font-size: 20px;
+            background:rgb(57, 96, 223);
+            font-weight: 800;
+            font-family: cursive;
+            color:whitesmoke;
+            padding: 5px 5px;
+        }
+        #showclock{
+            font-size: 30px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>DINAMIC CLOCK</h1><br>
+     <button onclick="clearInterval(clock)">DIGITAL TIME</button><br><br>
+     <p id="showclock"></p>
+    <script>
+        var clock=setInterval(clocktime,1000);
+        function clocktime(){
+            var d=new Date();
+            var b=d.toLocaleTimeString();
+            document.getElementById("showclock").innerHTML=b;
+
+        }
+    </script>
+</body>
+</html>
