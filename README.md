@@ -1,2 +1,2 @@
-# Digital-clock
- Digital clock by HTML,CSS and JavaScript.
+# Dinamic-clock
+ Dinamic-clock by HTML,CSS and JavaScript.
